@@ -100,6 +100,17 @@ puts result.inspect
 #   :@xmlns        => "http://www.otrs.org/TicketConnector/"
 # }
 
+result = @ticket.update(
+  'TicketID' => 223448, # OR 'TicketNumber' => 1176233
+  'Ticket' => {'Title' => 'New Title'}
+)
+puts result.inspect
+# returns
+# {
+#   :ticket_id=>"223448",
+#   :ticket_number=>"1176233",
+#   :@xmlns=>"http://www.otrs.org/TicketConnector/"
+# }
 ```
 
 Licence
