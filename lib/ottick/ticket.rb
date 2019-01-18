@@ -351,18 +351,18 @@ module Ottick
     end
 
     def sanitize_ticket_opts!(opts)
-      if opts.has_key?("QueueID")
-        raise RuntimeError, "Please use Queue instead of QueueID"
-      end
-      if opts.has_key?("StateID")
-        raise RuntimeError, "Please use State instead of StateID"
-      end
-      if opts.has_key?("PriorityID")
-        raise RuntimeError, "Please use Priority instead of PriorityID"
-      end
-      if opts.has_key?("TypeID")
-        raise RuntimeError, "Please use Type instead of TypeID"
-      end
+      # if opts.has_key?("QueueID")
+      #   raise RuntimeError, "Please use Queue instead of QueueID"
+      # end
+      # if opts.has_key?("StateID")
+      #   raise RuntimeError, "Please use State instead of StateID"
+      # end
+      # if opts.has_key?("PriorityID")
+      #   raise RuntimeError, "Please use Priority instead of PriorityID"
+      # end
+      # if opts.has_key?("TypeID")
+      #   raise RuntimeError, "Please use Type instead of TypeID"
+      # end
     end
 
     def sanitize_article_opts!(opts)
